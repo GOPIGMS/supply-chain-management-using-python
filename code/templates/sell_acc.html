@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Seller</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{background-image: url('static/img/f-bg.jpg');background-repeat:no-repeat;background-size: cover;
+			background-position: center;}
+        a{text-decoration: none;margin-right: 30px;padding-top: 10px;color: #000;}
+        ul{list-style: none;display: flex;height: 45px;font-size: 17px;}
+        nav{display: flex;background-color: #e5e5e5;height: 45px;justify-content: space-between;}
+        .mainForm{padding: 40px 300px;}
+        form{text-align: left;background-color: #a7a1d1;padding: 35px;border-radius: 5px;display: none;}
+        .form-group{margin-bottom: 25px;}
+        h5{text-align: center;margin-bottom: 20px;}
+        h6{padding-top: 10px;margin-right: 35px;}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="/sell_dash"><li>Add Products</li></a>
+            <a href="/view"><li>View Products</li></a>
+            <a href="/sell_acc"><li>Account</li></a>
+            <a href="/seller"><li>Logout</li></a>
+        </ul>
+        <h6>Bal: {{value}}</h6>
+    </nav>
+    <div class="mainForm">
+        <div class="container">
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Account No</th>
+                    <th scope="col">Branch Name</th>
+                    <th scope="col">Balance</th>
+                  </tr>
+                </thead>
+                <tbody>
+					{% for row in data %}
+					<tr>
+						<th scope="row">{{row[0]}}</th>
+						<td>{{row[6]}}</td>
+						<td>{{row[7]}}</td>
+						<td>{{row[8]}}</td>
+					  </tr>
+					{% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Buyer</title>
+    <style>
+        *{box-sizing: border-box;}
+        a{text-decoration: none;margin-right: 30px;padding-top: 10px;color: #000;}
+        ul{list-style: none;display: flex;height: 45px;font-size: 17px;}
+        nav{display: flex;background-color: #e5e5e5;height: 45px;justify-content: space-between;}
+        h6{padding-top: 10px;margin-right: 35px;}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="/buy_dash"><li>Products</li></a>
+            <a href="/p_prod"><li>Purchased Products</li></a>
+            <a href="/acc"><li>Account</li></a>
+            <a href="/buyer"><li>Logout</li></a>
+        </ul>
+        <h6>Bal: {{value}}</h6>
+    </nav>
+    <section class="prod">
+        <div class="container">
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Seller Name</th>
+                    <th scope="col">Buyer Name</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+					{% for row in data %}
+					<tr>
+						<th scope="row">{{row[0]}}</th>
+						<td>{{row[1]}}</td>
+                        <td>{{row[2]}}</td>
+						<td>{{row[3]}}</td>
+						<td>{{row[4]}}</td>
+					  </tr>
+					{% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </section>    
+</body>
+</html>

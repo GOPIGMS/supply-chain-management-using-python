@@ -11,8 +11,8 @@ UPLOAD_FOLDER = "/static/file"
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER']=UPLOAD_FOLDER
 # Initialize Twilio client
-account_sid = 'AC37b88798ffb16ea0c00b639df7678c81'
-auth_token = '653cf56c354f94dae772101426d48476'
+account_sid = 'xyz'
+auth_token = 'abc'
 client = Client(account_sid, auth_token)
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER

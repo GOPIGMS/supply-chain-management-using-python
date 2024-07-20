@@ -57,16 +57,39 @@ To start the Flask application, execute the following command in your terminal:
 
 This will start a development server. Open a web browser and go to `http://localhost:5000/` to access the application.
 
-## Usage
-
-- **Homepage (`/`):** Main landing page of the application.
-- **Buyer (`/buyer`):** Interface for buyers to view products or services.
-- **Seller (`/seller`):** Interface for sellers to manage their listings.
-- **Admin (`/admin`):** Dashboard for admin tasks and management.
-- **Buyer Registration (`/buy_reg`):** Form for buyers to register.
-- **Seller Registration (`/sell_reg`):** Form for sellers to register.
 
 ## Endpoints
+
+### Homepage
+
+- **URL:** `/`
+- **Description:** Main landing page of the application.
+
+### Buyer
+
+- **URL:** `/buyer`
+- **Description:** Interface for buyers to view products or services.
+
+### Seller
+
+- **URL:** `/seller`
+- **Description:** Interface for sellers to manage their listings.
+
+### Admin
+
+- **URL:** `/admin`
+- **Description:** Dashboard for admin tasks and management.
+
+### Buyer Registration
+
+- **URL:** `/buy_reg`
+- **Description:** Form for buyers to register.
+
+### Seller Registration
+
+- **URL:** `/sell_reg`
+- **Description:** Form for sellers to register.
+
 
 ### Buyer Validation
 

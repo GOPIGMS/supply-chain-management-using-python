@@ -66,6 +66,70 @@ This will start a development server. Open a web browser and go to `http://local
 - **Buyer Registration (`/buy_reg`):** Form for buyers to register.
 - **Seller Registration (`/sell_reg`):** Form for sellers to register.
 
+## Endpoints
+
+### Buyer Validation
+
+- **URL:** `/buyerval`
+- **Methods:** `POST`, `GET`
+- **Description:** Handles the validation of buyers. On POST request, retrieves the `username` and `password` from the form data.
+
+### Seller Validation
+
+- **URL:** `/sellerval`
+- **Methods:** `POST`, `GET`
+- **Description:** Handles the validation of sellers.
+
+### Admin Validation
+
+- **URL:** `/adminval`
+- **Methods:** `POST`, `GET`
+- **Description:** Handles the validation of admins. On POST request, retrieves the `username` and `password` from the form data.
+
+### Seller Dashboard
+
+- **Function:** `sell_dash()`
+- **Description:** Retrieves the balance of the seller from the database.
+
+### Purchase
+
+- **URL:** `/purchase`
+- **Methods:** `POST`, `GET`
+- **Description:** Handles product purchases. On POST request, retrieves the `product` from the form data.
+
+### Add Product
+
+- **URL:** `/add_prod`
+- **Methods:** `POST`, `GET`
+- **Description:** Handles the addition of new products by sellers. On POST request, retrieves various product details from the form data.
+
+### Account Details
+
+- **URL:** `/acc_details`
+- **Methods:** `POST`, `GET`
+- **Description:** Handles the account details of users. On POST request, retrieves account details from the form data.
+
+### Seller Account
+
+- **URL:** `/sell_acc`
+- **Description:** Retrieves details of the seller from the database.
+
+### View Products
+
+- **URL:** `/view`
+- **Description:** Retrieves and displays products of a specific seller from the database.
+
+### Seller Details
+
+- **URL:** `/sell_detail`
+- **Description:** Retrieves and displays details of all sellers from the database.
+
+## Notes
+
+- Make sure to handle sessions and database connections securely.
+- Ensure proper validation and error handling for all form inputs and database operations.
+
+
 ## Contributing
 
 This project is open for contributions. Feel free to fork the repository, make changes, and submit a pull request.

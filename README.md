@@ -147,13 +147,13 @@ This will start a development server. Open a web browser and go to `http://local
 - **URL:** `/sell_detail`
 - **Description:** Retrieves and displays details of all sellers from the database.
 
-## Notes :
+## Notes 
 
 - Make sure to handle sessions and database connections securely.
 - Ensure proper validation and error handling for all form inputs and database operations.
 
 
-## Contributing :
+## Contributing 
 
 This project is open for contributions. Feel free to fork the repository, make changes, and submit a pull request.
 

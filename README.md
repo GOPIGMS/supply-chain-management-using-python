@@ -46,12 +46,6 @@ This will start a development server. Open a web browser and go to `http://local
 
 ## Usage
 
-- **Homepage (`/`):** Main landing page of the application.
-- **Buyer (`/buyer`):** Interface for buyers to view products or services.
-- **Seller (`/seller`):** Interface for sellers to manage their listings.
-- **Admin (`/admin`):** Dashboard for admin tasks and management.
-- **Buyer Registration (`/buy_reg`):** Form for buyers to register.
-- **Seller Registration (`/sell_reg`):** Form for sellers to register.
 
 ## Contributing
 

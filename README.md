@@ -40,14 +40,120 @@ Before running the application, ensure you have the following installed:
 ## Running the Application
 
 To start the Flask application, execute the following command in your terminal:
+**Set the FLASK_APP environment variable**:
+   
+   If your Flask app is in a file named `app.py`, set the environment variable as follows:
+
+   - On macOS/Linux:
+     ```bash
+     export FLASK_APP=app.py
+     ```
+
+   - On Windows:
+     ```cmd
+     set FLASK_APP=app.py
+     ```
 
 
 This will start a development server. Open a web browser and go to `http://localhost:5000/` to access the application.
 
-## Usage
+
+## Endpoints
+
+### Homepage
+
+- **URL:** `/`
+- **Description:** Main landing page of the application.
+
+### Buyer
+
+- **URL:** `/buyer`
+- **Description:** Interface for buyers to view products or services.
+
+### Seller
+
+- **URL:** `/seller`
+- **Description:** Interface for sellers to manage their listings.
+
+### Admin
+
+- **URL:** `/admin`
+- **Description:** Dashboard for admin tasks and management.
+
+### Buyer Registration
+
+- **URL:** `/buy_reg`
+- **Description:** Form for buyers to register.
+
+### Seller Registration
+
+- **URL:** `/sell_reg`
+- **Description:** Form for sellers to register.
 
 
-## Contributing
+### Buyer Validation
+
+- **URL:** `/buyerval`
+- **Methods:** `POST`, `GET`
+- **Description:** Handles the validation of buyers. On POST request, retrieves the `username` and `password` from the form data.
+
+### Seller Validation
+
+- **URL:** `/sellerval`
+- **Methods:** `POST`, `GET`
+- **Description:** Handles the validation of sellers.
+
+### Admin Validation
+
+- **URL:** `/adminval`
+- **Methods:** `POST`, `GET`
+- **Description:** Handles the validation of admins. On POST request, retrieves the `username` and `password` from the form data.
+
+### Seller Dashboard
+
+- **Function:** `sell_dash()`
+- **Description:** Retrieves the balance of the seller from the database.
+
+### Purchase
+
+- **URL:** `/purchase`
+- **Methods:** `POST`, `GET`
+- **Description:** Handles product purchases. On POST request, retrieves the `product` from the form data.
+
+### Add Product
+
+- **URL:** `/add_prod`
+- **Methods:** `POST`, `GET`
+- **Description:** Handles the addition of new products by sellers. On POST request, retrieves various product details from the form data.
+
+### Account Details
+
+- **URL:** `/acc_details`
+- **Methods:** `POST`, `GET`
+- **Description:** Handles the account details of users. On POST request, retrieves account details from the form data.
+
+### Seller Account
+
+- **URL:** `/sell_acc`
+- **Description:** Retrieves details of the seller from the database.
+
+### View Products
+
+- **URL:** `/view`
+- **Description:** Retrieves and displays products of a specific seller from the database.
+
+### Seller Details
+
+- **URL:** `/sell_detail`
+- **Description:** Retrieves and displays details of all sellers from the database.
+
+## Notes 
+
+- Make sure to handle sessions and database connections securely.
+- Ensure proper validation and error handling for all form inputs and database operations.
+
+
+## Contributing 
 
 This project is open for contributions. Feel free to fork the repository, make changes, and submit a pull request.
 

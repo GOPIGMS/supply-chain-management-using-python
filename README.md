@@ -42,19 +42,7 @@ Before running the application, ensure you have the following installed:
 To start the Flask application, execute the following command in your terminal:
 **Set the FLASK_APP environment variable**:
    
-   If your Flask app is in a file named `app.py`, set the environment variable as follows:
-
-   - On macOS/Linux:
-     ```bash
-     export FLASK_APP=app.py
-     ```
-
-   - On Windows:
-     ```cmd
-     set FLASK_APP=app.py
-     ```
-
-
+   I
 This will start a development server. Open a web browser and go to `http://localhost:5000/` to access the application.
 
 

@@ -8,7 +8,7 @@ This Flask application serves as a platform for connecting buyers and sellers in
 
 Before running the application, ensure you have the following installed:
 
-- Python 3.x
+- Python 3.7
 - Flask
 - Twilio Python library (`twilio`)
 - MySQL Connector (`mysql-connector-python`)

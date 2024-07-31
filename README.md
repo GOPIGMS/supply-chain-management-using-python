@@ -141,7 +141,7 @@ This will start a development server. Open a web browser and go to `http://local
 - Ensure proper validation and error handling for all form inputs and database operations.
 
 
-## Contributing 
+## Contribution
 
 This project is open for contributions. Feel free to fork the repository, make changes, and submit a pull request.
 
